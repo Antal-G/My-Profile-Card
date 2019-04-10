@@ -14,59 +14,236 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('assets/background.jpg') no-repeat center center fixed;
+  background: url('https://github.com/Antal-G/antalgergely-card/blob/master/assets/background.jpg?raw=true') no-repeat center center fixed;
   background-size: cover;
+  		-webkit-animation: rotation 20s infinite linear;
 }
+
+
+/* Wrap of profilediscription, profile image and navigation bar */
 
 .profilecard {
-  width: 50rem;
-  height: 30rem;
-  max-width: calc(100vw - .625rem);
+  width: 30rem;
+  height: 20rem;
+  max-width: calc(100vw - 10rem);
+  max-height: calc(100vh - 5rem);
   font-family: 'Cormorant Garamond', serif;
-  background-color: antiquewhite;
+  color: black;
+  line-height: 1.5rem;
+  background-color: hsla(60,5%,60%,0.9);
+  border-radius: 1%;
 }
 
-/* Profile pic */
-
-.profile-img {
-  width: 7.5rem;
-  height: 7.5rem;
-  border-radius: 50%;
-  padding: .063rem;
-  background-color: #666;
-  transition: all 0.5s ease-in-out;
-  float: left;
-}
-
+/* Profile description */
 
 .description {
   width: 50%;
   height: 100%;
-  padding: 5rem;
-  background-color: red;
+  font-size: 1.2rem;
   float: left;
+  position: relative;
 }
 
+.desc-wrap {
+  width: 100%;
+  height: 50%;
+  padding: 1% 2% 10% 15%;
+  position: absolute;
+  top: 22%;
+ }
+
+h1,
+h2 {
+  margin: 0.1rem 0;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  margin: 0.7rem 0;
+  border-top: 1px solid black;
+
+}
+
+/* Profile img and navigation bar*/
 
 .img-navi {
+  width: 50%;
+  height: 100%;
   float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
-
-.navi {
-  float: right;
-  shape-outside: circle(50%);
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
-}
-
-ul {
+.profile-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
   float: left;
   shape-outside: circle(50%);
-  width: 200px;
-  height: 200px;
+  margin: 7%;
+  box-shadow: 5px 5px 10px 5px rgba(80,80,80, 0.7);
 }
+
+img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+.navi-wrap {
+  width: 100%;
+  height: 50%;
+  padding: 2% 2% 10% 15%;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+a {
+  display:inline-block;
+  padding: 6px;
+  transition: all 0.9s ease-in-out;
+}
+
+a:hover {
+  -webkit-transform: rotateX(150deg); /* Safari */
+  transform: rotateX(360deg);
+}
+
+.nav-icon {
+  background: rgba(238, 60, 70, 1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 6px;
+  color: rgba(0, 0, 60, 1);
+  border: 1px solid rgba(0, 0, 60, 1);
+}
+
+
+
+/* Stars*/
+  .stars {
+    background-color: white;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    position: absolute;
+  }
+
+  .star-1 {
+    top: 10%;
+    left: 20%;
+    animation-duration: 3s;
+    animation-name: twinkle;
+  }
+
+  .star-2 {
+    top: 15%;
+    left: 50%;
+    animation-duration: 1.9s;
+    animation-name: twinkle;
+  }
+
+  .star-3 {
+    top: 20%;
+    left: 70%;
+    animation-duration: 1.7s;
+    animation-name: twinkle;
+  }
+
+    .star-4 {
+    top: 30%;
+    left: 10%;
+    animation-duration: 2.3s;
+    animation-name: twinkle;
+  }
+
+    .star-5 {
+    top: 80%;
+    left: 50%;
+    animation-duration: 1.7s;
+    animation-name: twinkle;
+  }
+
+    .star-6 {
+    top: 90%;
+    left: 70%;
+    animation-duration: 1.8s;
+    animation-name: twinkle;
+  }
+
+    .star-7 {
+    top: 95%;
+    left: 20%;
+    animation-duration: 3.3s;
+    animation-name: twinkle;
+  }
+
+    .star-8 {
+    top: 60%;
+    left: 10%;
+    animation-duration: 2.3s;
+    animation-name: twinkle;
+  }
+
+    .star-9 {
+    top: 85%;
+    left: 60%;
+    animation-duration: 2.5s;
+    animation-name: twinkle;
+  }
+
+    .star-10 {
+    top: 70%;
+    left: 20%;
+    animation-duration: 3.3s;
+    animation-name: twinkle;
+  }
+
+    .star-11 {
+    top: 95%;
+    left: 55%;
+    animation-duration: 2.3s;
+    animation-name: twinkle;
+  }
+
+    .star-12 {
+    top: 30%;
+    left: 10%;
+    animation-duration: 2.3s;
+    animation-name: twinkle;
+  }
+
+    .star-13 {
+    top: 80%;
+    left: 50%;
+    animation-duration: 2.2s;
+    animation-name: twinkle;
+  }
+
+    .star-14 {
+    top: 70%;
+    left: 70%;
+    animation-duration: 1.7s;
+    animation-name: twinkle;
+  }
+
+    .star-15 {
+    top: 75%;
+    left: 20%;
+    animation-duration: 2.1s;
+    animation-name: twinkle;
+  }
+
+  @keyframes twinkle {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+
+
+
+
